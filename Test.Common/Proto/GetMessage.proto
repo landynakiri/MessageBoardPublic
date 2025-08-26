@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Protocol";
+
+enum GetMessageResult{
+	OK = 0;
+	Failed = 1;
+}
+
+message GetAllMessageReq {
+	
+}
+
+message GetMessageResp{
+	string name = 1;
+	string text = 2;
+	GetMessageResult result = 3;
+}
